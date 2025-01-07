@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background: 
+    linear-gradient(0deg, rgba(8, 32, 50, 0.9), rgba(8, 32, 50, 0.95)),
+    radial-gradient(circle at 50% 50%, #FF4C29 0%, transparent 50%),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 76, 41, 0.05) 0px,
+      rgba(255, 76, 41, 0.05) 2px,
+      transparent 2px,
+      transparent 12px
+    );
+  background-attachment: fixed;
+  color: white;
+  overflow-x: hidden;
+}
+
+.glow {
+  text-shadow: 0 0 10px #FF4C29;
+}
+
+/* Add subtle animation to background */
+@keyframes pulse {
+  0% { opacity: 0.8; }
+  50% { opacity: 1; }
+  100% { opacity: 0.8; }
+}
+
+.bg-game-secondary {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-game-secondary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(255, 76, 41, 0.15), transparent 70%);
+  animation: pulse 4s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ensure content stays above the animated background */
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Dropdown animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.absolute {
+  animation: slideDown 0.2s ease-out;
+}

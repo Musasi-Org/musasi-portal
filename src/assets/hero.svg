@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#082032"/>
+  <path d="M600 115L900 315L600 515L300 315L600 115Z" fill="#FF4C29" fill-opacity="0.1"/>
+  <path d="M600 165L850 315L600 465L350 315L600 165Z" fill="#FF4C29" fill-opacity="0.2"/>
+  <path d="M600 215L800 315L600 415L400 315L600 215Z" fill="#FF4C29" fill-opacity="0.3"/>
+  <path d="M600 265L750 315L600 365L450 315L600 265Z" fill="#FF4C29"/>
+  <circle cx="600" cy="315" r="30" fill="white"/>
+</svg>
